@@ -29,9 +29,9 @@ function ContactList(props) {
       online: true
     }
   ];
-  
+
   return (
-    users.map( user => <Contact name={user.name} avatar={user.avatar} online={user.online} />)
+    users.map( user => <Contact key={user.avatar} name={user.name} avatar={user.avatar} online={user.online} />)
   );
 }
 
